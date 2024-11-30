@@ -1,15 +1,31 @@
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions")
+local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
+Killingcredit:CreateButton("script made by JasaNaka(yt @iohag)", function()
+-- print("Hi")
+end)
 local KillingCheats = PhantomForcesWindow:NewSection("Teleport to soul")
 KillingCheats:CreateButton("teleport Malsoul", function()
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 rootPart.CFrame = workspace.MalSoul.CFrame
 end)
+KillingCheats:CreateButton("teleport Soul", function()
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.SoulDrop.CFrame
+end)
+KillingCheats:CreateButton("teleport CorruptedSoul", function()
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.CorruptedSoul.CFrame
+end)
+KillingCheats:CreateButton("teleport Mutatedsoul", function()
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.MutatedSoul.CFrame
+end)
 KillingCheats:CreateButton("AntiAfk", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
 end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
-KillingMe:CreateButton("removes hold e time", function()
+KillingMe:CreateButton("removes hold time for proximity prompt", function()
 getgenv().G = true -- change its to false and execute again to disable
 
 while getgenv().G do -- repeats script till getgenv().G = true
