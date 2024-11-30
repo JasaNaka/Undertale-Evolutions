@@ -9,7 +9,7 @@ KillingCheats:CreateButton("AntiAfk", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
 end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
-KillingMe:CreateButton("removes hold time for proximity prompt", function()
+KillingMe:CreateButton("removes hold e time", function()
 getgenv().G = true -- change its to false and execute again to disable
 
 while getgenv().G do -- repeats script till getgenv().G = true
