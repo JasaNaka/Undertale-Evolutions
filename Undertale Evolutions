@@ -1,0 +1,27 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions")
+local KillingCheats = PhantomForcesWindow:NewSection("Teleport to soul")
+KillingCheats:CreateButton("teleport Malsoul", function()
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.MalSoul.CFrame
+end)
+KillingCheats:CreateButton("AntiAfk", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
+local KillingMe = PhantomForcesWindow:NewSection("Function")
+KillingMe:CreateButton("removes hold time for proximity prompt", function()
+getgenv().G = true -- change its to false and execute again to disable
+
+while getgenv().G do -- repeats script till getgenv().G = true
+
+for i,d in pairs(game.Workspace:GetDescendants()) do -- iterates throught every object in game workspace.
+    if d.ClassName == 'ProximityPrompt' then -- checks if current object is "ProximityPrompt"
+        d.HoldDuration = 0 -- changes hold duration to zero. 
+    end
+end
+wait(10) 
+end
+end)
+KillingMe:CreateButton("disable hold e time", function()
+getgenv().G = false
+end)
