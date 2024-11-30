@@ -1,4 +1,4 @@
-tlocal Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions")
 local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
 Killingcredit:CreateButton("script made by JasaNaka(yt @iohag)", function()
