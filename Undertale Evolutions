@@ -46,9 +46,7 @@ end)
 KillingMe:CreateButton("disable hold e time", function()
 getgenv().G = false
 end)
-KillingMe:CreateButton("Kill Npc toggle after die", function()
-while true do
-wait(1)
+KillingMe:CreateButton("Kill Npc ", function()
 sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
         sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
         for i,d in pairs(game:GetService("Workspace"):GetDescendants()) do
