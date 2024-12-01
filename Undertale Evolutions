@@ -34,12 +34,6 @@ wait(2)
 game.Workspace.Map.BetterCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
 end
 end)
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.MalSoul.CFrame
-end)
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.MalSoul.CFrame
-end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
 KillingMe:CreateButton("removes hold e time", function()
 getgenv().G = true -- change its to false and execute again to disable
