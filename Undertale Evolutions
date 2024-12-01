@@ -1,3 +1,4 @@
+-- if game.PlaceId == 14204959937 then
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions page 1")
 local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
@@ -23,18 +24,12 @@ rootPart.CFrame = workspace.MutatedSoul.CFrame
 end)
 local KillingCap = PhantomForcesWindow:NewSection("Capsule teleport to you")
 KillingCap:CreateButton("Capsule", function()
-while true do 
-wait(2)
-game.Workspace.Map.RegularCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
-
-end
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.Map.RegularCapsule.CFrame
 end)
 KillingCap:CreateButton("Better Capsule", function()
-while true do 
-wait(2)
-game.Workspace.Map.BetterCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
-
-end
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.Map.BetterCapsule.CFrame
 end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
 KillingMe:CreateButton("removes hold e time", function()
@@ -92,4 +87,3 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1085.54
 end)
 KillingMaps:CreateButton("Superfell quest", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1330.65991, 577.305786, 1151.44165, 0.966958284, 0, 0.254934639, 0, 1, 0, -0.254934639, 0, 0.966958284)
-end)
