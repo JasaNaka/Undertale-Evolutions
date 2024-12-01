@@ -62,7 +62,7 @@ sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
             end
         end
 end)
-KillingMe:CreateButton("Kill Npc Tool", function()
+KillingMe:CreateButton("Kill Npc tool", function()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
 tool.Name = "Kill all"
