@@ -1,4 +1,4 @@
-if game.PlaceId == 134856751179275 then
+-- if game.PlaceId == 134856751179275 then
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions page 1")
 local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
