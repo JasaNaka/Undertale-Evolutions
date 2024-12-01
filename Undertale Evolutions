@@ -25,13 +25,13 @@ local KillingCheat = PhantomForcesWindow:NewSection("Capsule teleport to you")
 local KillingCheat:CreateButton("Capsule", function()
 while true do 
 wait(2)
-game.Workspace.RegularCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
+game.Workspace.Map.RegularCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
 end
 end)
 KillingCheats:CreateButton("better Capsule", function()
 while true do 
 wait(2)
-game.Workspace.BetterCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
+game.Workspace.Map.BetterCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
 end
 end)
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
