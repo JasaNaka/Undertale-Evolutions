@@ -21,17 +21,19 @@ KillingCheats:CreateButton("Mutatedsoul", function()
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 rootPart.CFrame = workspace.MutatedSoul.CFrame
 end)
-local KillingCheat = PhantomForcesWindow:NewSection("Capsule teleport to you")
-KillingCheat:CreateButton("Capsule", function()
+local KillingCap = PhantomForcesWindow:NewSection("Capsule teleport to you")
+KillingCap:CreateButton("Capsule", function()
 while true do 
 wait(2)
 game.Workspace.Map.RegularCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
+
 end
 end)
-KillingCheat:CreateButton("better Capsule", function()
+KillingCap:CreateButton("Better Capsule", function()
 while true do 
 wait(2)
 game.Workspace.Map.BetterCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
+
 end
 end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
