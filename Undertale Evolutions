@@ -22,7 +22,7 @@ local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 rootPart.CFrame = workspace.MutatedSoul.CFrame
 end)
 local KillingCheat = PhantomForcesWindow:NewSection("Capsule teleport to you")
-local KillingCheat:CreateButton("Capsule", function()
+KillingCheat:CreateButton("Capsule", function()
 while true do 
 wait(2)
 game.Workspace.Map.RegularCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
