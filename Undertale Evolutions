@@ -4,22 +4,30 @@ local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
 Killingcredit:CreateButton("script made by JasaNaka(yt @iohag)", function()
 -- print("Hi")
 end)
-local KillingCheats = PhantomForcesWindow:NewSection("Teleport to soul")
-KillingCheats:CreateButton("teleport Malsoul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.MalSoul.CFrame
+local KillingCheats = PhantomForcesWindow:NewSection("Soul teleport to")
+KillingCheats:CreateButton("Malsoul", function()
+while true do 
+wait(1)
+game.Workspace.MalSoul.Position = game.Players.LocalPlayer.Character.Head.Position
+end
 end)
-KillingCheats:CreateButton("teleport Soul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.SoulDrop.CFrame
+KillingCheats:CreateButton("Soul", function()
+while true do 
+wait(1)
+game.Workspace.SoulDrop.Position = game.Players.LocalPlayer.Character.Head.Position
+end
 end)
-KillingCheats:CreateButton("teleport CorruptedSoul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.CorruptedSoul.CFrame
+KillingCheats:CreateButton("CorruptedSoul", function()
+while true do 
+wait(1)
+game.Workspace.CorruptedSoul.Position = game.Players.LocalPlayer.Character.Head.Position
+end
 end)
-KillingCheats:CreateButton("teleport Mutatedsoul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.MutatedSoul.CFrame
+KillingCheats:CreateButton("Mutatedsoul", function()
+while true do 
+wait(1)
+game.Workspace.MutatedSoul.Position = game.Players.LocalPlayer.Character.Head.Position
+end
 end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
 KillingMe:CreateButton("removes hold e time", function()
@@ -37,6 +45,17 @@ end
 end)
 KillingMe:CreateButton("disable hold e time", function()
 getgenv().G = false
+end)
+KillingMe:CreateButton("Kill Npc toggle after die", function()
+while true do
+wait(1)
+sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
+        sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
+        for i,d in pairs(game:GetService("Workspace"):GetDescendants()) do
+            if d.ClassName == 'Humanoid' and d.Parent.Name ~= game.Players.LocalPlayer.Name then
+                d.Health = 0
+            end
+        end
 end)
 KillingMe:CreateButton("Universal Viewer", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universe-viewer-10546"))()
