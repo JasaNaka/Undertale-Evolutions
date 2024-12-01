@@ -1,4 +1,4 @@
--- if game.PlaceId == 14204959937 then
+if game.PlaceId == 134856751179275 then
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions page 1")
 local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
@@ -87,3 +87,4 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1085.54
 end)
 KillingMaps:CreateButton("Superfell quest", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1330.65991, 577.305786, 1151.44165, 0.966958284, 0, 0.254934639, 0, 1, 0, -0.254934639, 0, 0.966958284)
+-- else if game.PlaceId == 0 then
