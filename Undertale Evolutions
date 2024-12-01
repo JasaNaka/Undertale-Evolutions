@@ -62,6 +62,9 @@ sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
             end
         end
 end)
+KillingMe:CreateButton("Fly v3 mobile", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
 KillingMe:CreateButton("Universal Viewer", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universe-viewer-10546"))()
 end)
