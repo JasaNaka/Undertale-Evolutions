@@ -65,7 +65,7 @@ end)
 KillingMe:CreateButton("Kill Npc Tool", function()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = "Master Of Destruction"
+tool.Name = "Kill all"
 tool.Activated:connect(function()
 sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
         sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
