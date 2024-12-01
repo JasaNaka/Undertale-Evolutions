@@ -4,7 +4,7 @@ local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
 Killingcredit:CreateButton("script made by JasaNaka(yt @iohag)", function()
 -- print("Hi")
 end)
-local KillingCheats = PhantomForcesWindow:NewSection("Soul teleport to")
+local KillingCheats = PhantomForcesWindow:NewSection("Teleport to Soul")
 KillingCheats:CreateButton("Malsoul", function()
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 rootPart.CFrame = workspace.MalSoul.CFrame
@@ -20,6 +20,25 @@ end)
 KillingCheats:CreateButton("Mutatedsoul", function()
 local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 rootPart.CFrame = workspace.MutatedSoul.CFrame
+end)
+local KillingCheat = PhantomForcesWindow:NewSection("Capsule teleport to you")
+local KillingCheat:CreateButton("Capsule", function()
+while true do 
+wait(2)
+game.Workspace.RegularCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
+end
+end)
+KillingCheats:CreateButton("better Capsule", function()
+while true do 
+wait(2)
+game.Workspace.BetterCapsule.Position = game.Players.LocalPlayer.Character.Torso.Position
+end
+end)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.MalSoul.CFrame
+end)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = workspace.MalSoul.CFrame
 end)
 local KillingMe = PhantomForcesWindow:NewSection("Function")
 KillingMe:CreateButton("removes hold e time", function()
