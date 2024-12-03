@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 
-local Window = OrionLib:MakeWindow({Name = "Undertale Evolutions", HidePremium = false, SaveConfig = true, ConfigFolder = "JasaNaka"})
+local Window = OrionLib:MakeWindow({Name = "Undertale Evolutions", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
