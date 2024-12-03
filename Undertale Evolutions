@@ -1,106 +1,97 @@
-local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-local PhantomForcesWindow = Library:NewWindow("Undertale Evolutions page 1")
-local Killingcredit = PhantomForcesWindow:NewSection("IMPORTANT!!")
-Killingcredit:CreateButton("script made by JasaNaka(yt @iohag)", function()
--- print("Hi")
-end)
-Killingcredit:CreateButton("after click check console", function()
-print("Can you showcase this script? im lazy also remember it by JasaNasaka")
-end)
-local KillingCheats = PhantomForcesWindow:NewSection("Teleport to Soul")
-KillingCheats:CreateButton("Malsoul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.MalSoul.CFrame
-end)
-KillingCheats:CreateButton("Soul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.SoulDrop.CFrame
-end)
-KillingCheats:CreateButton("CorruptedSoul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.CorruptedSoul.CFrame
-end)
-KillingCheats:CreateButton("Mutatedsoul", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.MutatedSoul.CFrame
-end)
-local KillingCap = PhantomForcesWindow:NewSection("Capsule teleport to you")
-KillingCap:CreateButton("Capsule", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.Map.RegularCapsule.CFrame
-end)
-KillingCap:CreateButton("Better Capsule", function()
-local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = workspace.Map.BetterCapsule.CFrame
-end)
-local KillingMe = PhantomForcesWindow:NewSection("Function")
-KillingMe:CreateButton("removes hold e time", function()
-getgenv().G = true -- change its to false and execute again to disable
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local Speed_Finish = Instance.new("TextButton")
+local closetab = Instance.new("TextButton")
+local hotbar = Instance.new("Frame")
+local minitab = Instance.new("TextButton")
+local openmenu = Instance.new("TextButton")
+local BSpeed_Finish = Instance.new("TextButton")
+local CSpeed_Finish = Instance.new("TextButton")
+local DSpeed_Finish = Instance.new("TextButton")
+local ESpeed_Finish = Instance.new("TextButton")
+local FSpeed_Finish = Instance.new("TextButton")
+local GSpeed_Finish = Instance.new("TextButton")
+local GGSpeed_Finish = Instance.new("TextButton")
+local GGGSpeed_Finish = Instance.new("TextButton")
+local gGSpeed_Finish = Instance.new("TextButton")
+local GGGGSpeed_Finish = Instance.new("TextButton")
+local GDGSpeed_Finish = Instance.new("TextButton")
+wait(0)
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+gui.Name = ("CustomChars")
+gui.ResetOnSpawn = false
 
-while getgenv().G do -- repeats script till getgenv().G = true
 
-for i,d in pairs(game.Workspace:GetDescendants()) do -- iterates throught every object in game workspace.
-    if d.ClassName == 'ProximityPrompt' then -- checks if current object is "ProximityPrompt"
-        d.HoldDuration = 0 -- changes hold duration to zero. 
-    end
-end
-wait(10) 
-end
-end)
-KillingMe:CreateButton("disable hold e time", function()
-getgenv().G = false
-end)
-KillingMe:CreateButton("Kill Npc", function()
-sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
-        sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
-        for i,d in pairs(game:GetService("Workspace"):GetDescendants()) do
-            if d.ClassName == 'Humanoid' and d.Parent.Name ~= game.Players.LocalPlayer.Name then
-                d.Health = 0
-            end
-        end
-end)
-KillingMe:CreateButton("Loop Kill Npc cant disable", function()
+frame.Parent = gui
+frame.Name = ("MainFrame")
+frame.Size = UDim2.new(0.4, 0, 0.5, 0)
+frame.Active = true
+frame.Draggable = true
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BackgroundTransparency = 0.1
+frame.BorderSizePixel = 5
+frame.BorderColor3 = Color3.fromRGB(85, 255, 0)
+hotbar.Parent = gui
+hotbar.Name = ("Hotbar")
+hotbar.Size = UDim2.new(0.6, 0, 0.1, 0)
+hotbar.Active = true
+hotbar.Draggable = false
+hotbar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+hotbar.BackgroundTransparency = 0.1
+hotbar.BorderSizePixel = 5
+hotbar.BorderColor3 = Color3.fromRGB(85, 255, 0)
+hotbar.Position = UDim2.new(0.195, 0, 0.04, 0)
+hotbar.Visible = false
+
+
+title.Parent = gui.MainFrame
+title.Name = ("GODOOOD")
+title.Size = UDim2.new(0.5, 0, 0.2, 0)
+title.BackgroundTransparency = 1
+title.TextColor3 = Color3.fromRGB(85, 255, 0)
+title.TextScaled = true
+title.Text = ("Undertale Evolutions")
+title.Font = ("Arcade")
+
+
+
+openmenu.Parent = gui.Hotbar
+openmenu.Name = ("OpenDaMain")
+openmenu.Size = UDim2.new(0.08, 0, 1, 0)
+openmenu.BackgroundTransparency = 0.1
+openmenu.BorderSizePixel = 3
+openmenu.BorderColor3 = Color3.fromRGB(85, 255, 0)
+openmenu.Text = ("Main Menu")
+openmenu.TextColor3 = Color3.fromRGB(85, 255, 0)
+openmenu.BackgroundColor3 = Color3.fromRGB(0,0,0)
+openmenu.TextScaled = true
+openmenu.Position = UDim2.new(0, 0, 0, 0)
+openmenu.Visible = false
+openmenu.Font = ("Arcade")
+
+
+Speed_Finish.Parent = gui.MainFrame
+Speed_Finish.Name = ("Birdtale fun")
+Speed_Finish.Size = UDim2.new(0.25, 0, 0.15, 0)
+Speed_Finish.BackgroundTransparency = 0.1
+Speed_Finish.BorderSizePixel = 3
+Speed_Finish.BorderColor3 = Color3.fromRGB(85, 255, 0)
+Speed_Finish.Text = ("THE SCRIPT HAS BEEN PATCHED WILL COME BACK IN 1 WEEK OR 2 WEEK WITH V2 VERISON")
+Speed_Finish.TextColor3 = Color3.fromRGB(85, 255, 0)
+Speed_Finish.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Speed_Finish.TextScaled = true
+Speed_Finish.Position = UDim2.new(0, 8, 0.25, 0)
+Speed_Finish.Visible = true
+Speed_Finish.Font = ("Arcade")
+
+
+
 while true do
-wait(3)
-sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
-        sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
-        for i,d in pairs(game:GetService("Workspace"):GetDescendants()) do
-            if d.ClassName == 'Humanoid' and d.Parent.Name ~= game.Players.LocalPlayer.Name then
-                d.Health = 0
-            end
-        end
-end)
-KillingMe:CreateButton("Fly v3 mobile", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JasaNaka/Undertale-Evolutions/refs/heads/main/Flywhatt%20v3"))()
-end)
-KillingMe:CreateButton("Universal Viewer", function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universe-viewer-10546"))()
-end)
-KillingMe:CreateButton("Infinity Yield", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-KillingMe:CreateButton("AntiAfk", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
-end)
-local KillingMaps = PhantomForcesWindow:NewSection("Teleport Maps")
-KillingMaps:CreateButton("Overworld", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-808.229919, 544.202026, -158.887222, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-KillingMaps:CreateButton("Ink", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5533.42676, 102.115273, -98.5779724, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-KillingMaps:CreateButton("Unknown Teleporter", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3911.35522, 102.115273, -116.349243, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-KillingMaps:CreateButton("Loading Bar", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3037.9314, 265.70459, 11553.9102, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-KillingMaps:CreateButton("Mainframe(bsod)", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3787.73486, 102.917839, 3099.89038, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-KillingMaps:CreateButton("Antivoid(craft gaster)", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1085.54346, 567.466675, 1141.54688, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-KillingMaps:CreateButton("Superfell quest", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1330.65991, 577.305786, 1151.44165, 0.966958284, 0, 0.254934639, 0, 1, 0, -0.254934639, 0, 0.966958284)
-end)
+	if openmenu.Visible == false and frame.Visible == true and hotbar.Visible == true then
+		hotbar.Visible = false
+		wait(0.01)
+	end
+	wait(0.01)
+end
+
