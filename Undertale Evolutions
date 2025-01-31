@@ -6,19 +6,19 @@ local EternalVessel2 = Workspace.Map.Enemies.EternalVessels.EternalVessel.Humano
 local player = game.Players.LocalPlayer
 local i = 1
 local character = player.Character or player.CharacterAdded:Wait()
-local Window = Library.CreateLib("Made byJasaNaka,idea:SStsweRT")
+local Window = Library.CreateLib("Undertale Evolutions")
 
--- Секция
-local Tab = Window:NewTab("Undertale Evolutions")
+local Tab = Window:NewTab("Credits")
+
+Section:NewButton("Made by JasaNaka and idea by SStsweRT", function()
+end)
 
 local Tab = Window:NewTab("Main")
--- Подсекция
-local Section = Tab:NewSection("Version")
 
--- Заголовок
+-- local Section = Tab:NewSection("Version")
+
 Section:NewLabel("farm things")
 
--- Кнопка
 Section:NewButton("auto farm", "ButtonInfo", function()
 p.CFrame = Workspace.Map.Enemies.EternalVessels.EternalVessel.Head.CFrame + Vector3.new(0 , 35 , 0)
 character:SetPrimaryPartCFrame(character.PrimaryPart.CFrame * CFrame.Angles(math.rad(-90), 0, 0))
