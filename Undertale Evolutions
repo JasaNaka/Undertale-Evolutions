@@ -10,7 +10,7 @@ local Window = Library.CreateLib("Undertale Evolutions")
 
 local Tab = Window:NewTab("Credits")
 
-Section:NewButton("Made by JasaNaka and idea by SStsweRT", function()
+Section:NewButton("Made by JasaNaka and idea by SStsweRT", "ButtonInfo", function()
 end)
 
 local Tab = Window:NewTab("Main")
