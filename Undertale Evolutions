@@ -6,7 +6,7 @@ local EternalVessel2 = Workspace.Map.Enemies.EternalVessels.EternalVessel.Humano
 local player = game.Players.LocalPlayer
 local i = 1
 local character = player.Character or player.CharacterAdded:Wait()
-local Window = Library.CreateLib("JasaNaka,idea:SStsweRT")
+local Window = Library.CreateLib("Made byJasaNaka,idea:SStsweRT")
 
 -- Секция
 local Tab = Window:NewTab("Undertale Evolutions")
@@ -38,7 +38,7 @@ Section:NewButton("Better Capsule", "ButtonInfo", function()
 p.CFrame = Workspace.Map.BetterCapsule.CFrame + Vector3.new(0,3,0)
 end)
 
-local Tab = Window:NewTab("Locations")
+local Tab = Window:NewTab("World")
 
 local Section = Tab:NewSection("Teleport")
 
@@ -46,15 +46,15 @@ Section:NewButton("True Barrier", "ButtonInfo", function()
 p.CFrame = Workspace.Map.TrueBarrier.TPHere.CFrame
 end)
 
-Section:NewButton("VWMap", "ButtonInfo", function()
+Section:NewButton("VWMap idk found in dex", "ButtonInfo", function()
 p.CFrame = Workspace.Map.VWMap.Spawn.CFrame
 end)
 
-Section:NewButton("SFR Room", "ButtonInfo", function()
+Section:NewButton("Superfell Room", "ButtonInfo", function()
 p.CFrame = Workspace.Map.SFRoom.Here.CFrame
 end)
 
-Section:NewButton("Mainfraime", "ButtonInfo", function()
+Section:NewButton("Mainframe", "ButtonInfo", function()
 p.CFrame = Workspace.Map.Mainframe.Here.CFrame
 end)
 
@@ -66,14 +66,14 @@ Section:NewButton("AntiVoid", "ButtonInfo", function()
 p.CFrame = Workspace.Map.AntiVoid.Here.CFrame
 end)
 
-Section:NewButton("Deep Code ok", "ButtonInfo", function()
+Section:NewButton("Deep Code idk found in dex", "ButtonInfo", function()
 p.CFrame = Workspace.Map.DeepCode.Ground.CFrame
 end)
 
 
 local Tab = Window:NewTab("Craft Statues")
 
-local Section = Tab:NewSection("Statues:")
+local Section = Tab:NewSection("statues:")
 
 Section:NewButton("T1 NPC", "ButtonInfo", function()
 p.CFrame = Workspace.Map.Statues:FindFirstChild("T1 NPC").HumanoidRootPart.CFrame
