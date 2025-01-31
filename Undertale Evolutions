@@ -15,7 +15,7 @@ end)
 
 local Tab = Window:NewTab("Main")
 
--- local Section = Tab:NewSection("Version")
+local Section = Tab:NewSection("Version")
 
 Section:NewLabel("farm things")
 
