@@ -6,7 +6,7 @@ local EternalVessel2 = Workspace.Map.Enemies.EternalVessels.EternalVessel.Humano
 local player = game.Players.LocalPlayer
 local i = 1
 local character = player.Character or player.CharacterAdded:Wait()
-local Window = Library.CreateLib("SSwendRT mobile support", "RJTheme3")
+local Window = Library.CreateLib("SSwendRT support all devices", "RJTheme3")
 
 -- Секция
 local Tab = Window:NewTab("Undertale Evolutions(Alpha1)")
